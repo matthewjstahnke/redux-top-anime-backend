@@ -5,7 +5,7 @@ class Anime < ApplicationRecord
       synopsis: anime_data["attributes"]["synopsis"],
       date: anime_data["attributes"]["startDate"],
       episodes: anime_data["attributes"]["episodeCount"],
-      poster: anime_data["attributes"]["posterImage"]["small"]
+      poster: anime_data["attributes"]["posterImage"]["original"]
     )
   end
 end

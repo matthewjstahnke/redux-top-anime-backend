@@ -10,7 +10,7 @@ class Api
   def self.load_anime
       offset_number = 0
 
-      until offset_number == 200 do         
+      until offset_number == 400 do         
           response = RestClient.get(base_url + "?page%5Blimit%5D=20&page%5Boffset%5D=#{offset_number}")
           data = JSON.parse(response.body)
           data["data"].each do |anime_data|

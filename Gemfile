@@ -19,6 +19,7 @@ gem 'rest-client'
 gem 'json'
 gem 'pry'
 gem 'awesome_print'
+gem 'jwt'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

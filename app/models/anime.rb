@@ -1,4 +1,7 @@
 class Anime < ApplicationRecord
+  has_many :reviews
+  has_many :users, through: :reviews
+
   def self.create_from_api(anime_data)
     create(
       title: anime_data["attributes"]["canonicalTitle"],

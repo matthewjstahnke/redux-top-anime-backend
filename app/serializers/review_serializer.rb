@@ -1,5 +1,8 @@
 class ReviewSerializer < ActiveModel::Serializer
-  attributes :id, :content, :rating
-  has_one :user
-  has_one :anime
+  attributes :id, :content, :rating, :username
+
+  def username
+    object.user.username
+  end
+
 end

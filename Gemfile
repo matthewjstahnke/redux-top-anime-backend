@@ -20,6 +20,7 @@ gem 'json'
 gem 'pry'
 gem 'awesome_print'
 gem 'jwt'
+gem 'dotenv-rails'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

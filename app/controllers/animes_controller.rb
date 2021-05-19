@@ -18,17 +18,7 @@ class AnimesController < ApplicationController
     @anime = Anime.new(anime_params)
 
     if @anime.save
-      render json: @anime, status: :created, location: @anime
-    else
-      render json: @anime.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /animes/1
-  def update
-    if @anime.update(anime_params)
-      render json: @anime
-    else
+      render json: @anime, status: :createqsws
       render json: @anime.errors, status: :unprocessable_entity
     end
   end
